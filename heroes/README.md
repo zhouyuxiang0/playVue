@@ -1,4 +1,4 @@
-# hero
+# heroes
 
 ## Project setup
 ```
