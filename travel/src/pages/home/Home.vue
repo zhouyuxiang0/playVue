@@ -1,5 +1,7 @@
 <template>
-    <div>home</div>
+    <div>
+        hello world
+    </div>
 </template>
 
 <script>
@@ -9,5 +11,7 @@ export default {
 </script>
 
 <style>
-    
+    .home {
+        font-size: 50px;
+    }
 </style>
