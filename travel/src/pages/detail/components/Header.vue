@@ -44,7 +44,7 @@ export default {
       console.log(document.documentElement.scrollTop)
     }
   },
-  activated () {
+  activated () {   // keep-alive exclude="Detail" 导致activated不执行 可以使用activated发送ajax
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () {
