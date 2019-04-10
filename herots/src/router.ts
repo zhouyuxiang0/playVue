@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Dashboard from './views/Dashboard.vue'
+import Heroes from './views/Heroes.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,9 @@ export default new Router({
     }, {
       path: '/dashboard',
       component: Dashboard
+    }, {
+      path: '/heroes',
+      component: Heroes
     },
     {
       path: '/about',

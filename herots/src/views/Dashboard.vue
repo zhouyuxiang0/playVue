@@ -13,23 +13,31 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Action } from 'vuex-class'
+import {
+  State,
+  Getter,
+  Action,
+  Mutation,
+  namespace
+} from 'vuex-class'
+import { mapState, mapMutations } from 'vuex'
 
 @Component({
 
 })
 export default class DashboardComponent extends Vue {
+  @State('HeroesModule')
+  HeroesModule: any
+
   private list: object[] = []
 
-  // @Action('foo') actionFoo!: object
-
-  // mounted (): void {
-  //   console.log('mounted')
-  // }
+  created () {
+    this.list = this.HeroesModule.heroes
+  }
 }
 </script>
 
-<style scope>
+<style scoped>
 /* DashboardComponent's private CSS styles */
 [class*='col-'] {
   float: left;

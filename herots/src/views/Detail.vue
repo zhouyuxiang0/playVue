@@ -1,18 +1,19 @@
 <template>
   <div v-if="hero">
-    <h2>{{hero.name}}</h2>
-    <div><span>id:</span>{{hero.id}}</div>
+    <h2>{{hero.name}} Detail</h2>
+    <div><span>id: </span>{{hero.id}}</div>
     <div>
       <label>name:
-          <input type="text" :value="selectedHero.name" placeholder="name">
+        <input type="text">
       </label>
     </div>
+    <button @click="goBack()">go back</button>
+    <button @click="save()">save</button>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Hero } from './Home.vue';
 
 @Component({
   props: {
@@ -24,6 +25,6 @@ export default class Detail extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

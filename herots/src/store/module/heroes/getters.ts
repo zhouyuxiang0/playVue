@@ -1,6 +1,6 @@
 export default {
-  changeHeroes () {
-    console.log('actions')
-    return 1
+  getHeroes (state: any) {
+    console.log(state)
+    return 123
   }
 }
