@@ -1,4 +1,4 @@
-const state =  {
+export default {
   heroes: [
     { id: 11, name: 'Mr. Nice' },
     { id: 12, name: 'Narco' },
@@ -12,5 +12,3 @@ const state =  {
     { id: 20, name: 'Tornado' }
   ]
 }
-
-export default state

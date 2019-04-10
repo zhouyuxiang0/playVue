@@ -3,12 +3,10 @@ import state from './state'
 import mutations from './mutations'
 import getters from './getters'
 
-const HeroModule =  {
+export default {
   namespaced: true,
   state,
-  actions,
   getters,
+  actions,
   mutations
 }
-
-export default HeroModule

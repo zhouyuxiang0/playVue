@@ -1,7 +1,5 @@
-const actions =  {
+export default {
   changeHeroes () {
     console.log('actions')
   }
 }
-
-export default actions

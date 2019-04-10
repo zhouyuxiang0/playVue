@@ -30,9 +30,9 @@ export default class Home extends Vue {
   selectedHero: Hero = { id: 11, name: 'Mr. Nice' };
 
 // ------------computed------------------
-  get computedHeroName () {
-    return this.selectedHero.name.toUpperCase()
-  }
+  // get computedHeroName () {
+  //   return this.selectedHero.name.toUpperCase()
+  // }
 
 // ------------methods--------------------
   onSelect (hero: Hero): void {

@@ -23,9 +23,9 @@ export default class DashboardComponent extends Vue {
 
   // @Action('foo') actionFoo!: object
 
-  mounted (): void {
-    console.log('mounted')
-  }
+  // mounted (): void {
+  //   console.log('mounted')
+  // }
 }
 </script>
 

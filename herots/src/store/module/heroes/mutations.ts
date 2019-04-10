@@ -1,7 +1,5 @@
-const mutations =  {
+export default {
   CHANGEHEROES () {
     console.log('mutations')
   }
 }
-
-export default mutations
